@@ -16,3 +16,7 @@ download.file(url, f)
 dt <- data.table(read.csv(f))
 setkey(dt, VAL)
 dt[, .N, key(dt)]
+
+##Question 2
+setkey(dt, FES)
+dt[, .N, key(dt)]
